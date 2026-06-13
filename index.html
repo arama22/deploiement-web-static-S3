@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mali — Terre de Lumière</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-text">Mali</span>
+        <span class="logo-sub">Terre de Lumière</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#heritage">Patrimoine</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-line"></span>
+        <span>13°N · 2°W · Afrique de l'Ouest</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="title-line">Au Cœur</span>
+        <span class="title-line accent">du Mali</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Une civilisation millénaire. Des paysages sublimes.<br>
+        Une âme qui transcende le temps.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#about" class="btn-primary">Découvrir</a>
+        <a href="#gallery" class="btn-outline">Galerie</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="1240">0</span>
+          <span class="stat-unit">km²</span>
+          <span class="stat-label">De territoire</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="22">0</span>
+          <span class="stat-unit">M</span>
+          <span class="stat-label">D'habitants</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-unit">UNESCO</span>
+          <span class="stat-label">Sites classés</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <div class="section-eyebrow">À propos</div>
+          <h2 class="section-title">Un Empire<br><em>Entre deux Fleuves</em></h2>
+          <p class="about-lead">Le Mali, ancienne terre des grands empires — Mandé, Ghana, Mali, Songhaï — est le berceau d'une civilisation qui a façonné l'Afrique subsaharienne pendant des millénaires.</p>
+          <p class="about-body">Traversé par le fleuve Niger, ce pays enclavé au cœur de l'Afrique de l'Ouest conjugue déserts grandioses, falaises mystérieuses et villes sacrées. De Bamako à Tombouctou, chaque kilomètre raconte une histoire.</p>
+          <div class="about-tags">
+            <span class="tag">Bamako</span>
+            <span class="tag">Tombouctou</span>
+            <span class="tag">Djenné</span>
+            <span class="tag">Pays Dogon</span>
+          </div>
+        </div>
+        <div class="about-visual reveal-right">
+          <div class="about-card main-card">
+            <img src="images/m bg.jpg.jpg" alt="Fleuve Niger au Mali" class="about-img" onerror="this.src='https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&q=80'" />
+            <div class="card-badge">1240 km²</div>
+          </div>
+          <div class="float-card reveal">
+            <div class="float-icon">🌊</div>
+            <div>
+              <strong>Fleuve Niger</strong>
+              <span>4 180 km de long</span>
+            </div>
+          </div>
+          <div class="float-card float-card-2 reveal">
+            <div class="float-icon">🏛️</div>
+            <div>
+              <strong>Fondation</strong>
+              <span>22 septembre 1960</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Section -->
+  <section class="heritage" id="heritage">
+    <div class="heritage-bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow light">Patrimoine mondial</div>
+        <h2 class="section-title light">Joyaux<br><em>de l'Humanité</em></h2>
+      </div>
+      <div class="heritage-grid">
+
+        <div class="heritage-card reveal" style="--delay: 0.1s">
+          <div class="hcard-img-wrap">
+            <img src="images/dj.jpg" alt="Grande Mosquée de Djenné" class="hcard-img"
+              onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Great_Mosque_of_Djenn%C3%A9.jpg/640px-Great_Mosque_of_Djenn%C3%A9.jpg'" />
+            <div class="hcard-overlay">
+              <span class="hcard-badge">UNESCO 1988</span>
+            </div>
+          </div>
+          <div class="hcard-body">
+            <h3>Grande Mosquée de Djenné</h3>
+            <p>Chef-d'œuvre de l'architecture soudano-sahélienne en banco (terre crue), la plus grande mosquée en pisé du monde. Construite au XIIIe siècle, elle symbolise l'apogée de l'islam au Sahel.</p>
+            <div class="hcard-meta">
+              <span>📍 Djenné</span>
+              <span>🏛️ Architecture soudano-sahélienne</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="heritage-card reveal" style="--delay: 0.25s">
+          <div class="hcard-img-wrap">
+            <img src="images/tb.jpg" alt="Tombouctou" class="hcard-img"
+              onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Djingareyber.jpg/640px-Djingareyber.jpg'" />
+            <div class="hcard-overlay">
+              <span class="hcard-badge">UNESCO 1988</span>
+            </div>
+          </div>
+          <div class="hcard-body">
+            <h3>Tombouctou</h3>
+            <p>Cité mystérieuse et carrefour intellectuel du Moyen Âge. Ses mosquées (Djingareyber, Sankore, Sidi Yahia) et ses 700 000 manuscrits anciens témoignent d'un savoir universel.</p>
+            <div class="hcard-meta">
+              <span>📍 Région de Tombouctou</span>
+              <span>📚 700 000 manuscrits</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="heritage-card reveal" style="--delay: 0.4s">
+          <div class="hcard-img-wrap">
+            <img src="images/Bandiagara.jpg" alt="Pays Dogon" class="hcard-img"
+              onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Dogon_village.jpg/640px-Dogon_village.jpg'" />
+            <div class="hcard-overlay">
+              <span class="hcard-badge">UNESCO 1989</span>
+            </div>
+          </div>
+          <div class="hcard-body">
+            <h3>Falaises de Bandiagara</h3>
+            <p>Les falaises du Pays Dogon, hautes de plus de 500 mètres, abritent des villages accrochés à la roche depuis le XIVe siècle. Un peuple, une cosmogonie, une architecture unique.</p>
+            <div class="hcard-meta">
+              <span>📍 Mopti</span>
+              <span>⛰️ 150 km de falaises</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture Section -->
+  <section class="culture" id="culture">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Richesses</div>
+        <h2 class="section-title">Culture &amp;<br><em>Traditions</em></h2>
+      </div>
+      <div class="culture-grid">
+        <div class="culture-item reveal" style="--delay: 0s">
+          <div class="culture-icon">🎵</div>
+          <h3>Musique &amp; Griots</h3>
+          <p>Le Mali est le berceau de la musique west-africaine. Les griots, gardiens de la mémoire orale, perpétuent des traditions musicales immortalisées par Salif Keïta, Ali Farka Touré et Toumani Diabaté.</p>
+        </div>
+        <div class="culture-item reveal" style="--delay: 0.15s">
+          <div class="culture-icon">🎨</div>
+          <h3>Artisanat &amp; Bogolan</h3>
+          <p>Le bogolan, tissu aux motifs géométriques teints à la boue fermentée, est devenu le symbole textile du Mali. Chaque motif raconte l'histoire d'un clan, d'un rite, d'une saison.</p>
+        </div>
+        <div class="culture-item reveal" style="--delay: 0.3s">
+          <div class="culture-icon">🌿</div>
+          <h3>Gastronomie</h3>
+          <p>Le tô (pâte de mil), le poulet yassa, le riz au gras et le thiéboudiène sont les piliers de la cuisine malienne, où chaque famille garde jalousement ses secrets et ses épices.</p>
+        </div>
+        <div class="culture-item reveal" style="--delay: 0.45s">
+          <div class="culture-icon">💎</div>
+          <h3>Or &amp; Commerce</h3>
+          <p>L'Empire du Mali était le plus grand producteur d'or au monde au XIVe siècle. Mansa Moussa, lors de son pèlerinage à la Mecque en 1324, distribua tant d'or qu'il déstabilisa les marchés du Caire.</p>
+        </div>
+        <div class="culture-item reveal" style="--delay: 0.6s">
+          <div class="culture-icon">📖</div>
+          <h3>Manuscrits de Tombouctou</h3>
+          <p>Plus de 700 000 manuscrits islamiques, scientifiques et philosophiques conservés à Tombouctou témoignent d'une université médiévale qui accueillait jusqu'à 25 000 étudiants.</p>
+        </div>
+        <div class="culture-item reveal" style="--delay: 0.75s">
+          <div class="culture-icon">🌅</div>
+          <h3>Fleuve Niger</h3>
+          <p>Artère vitale du Mali, le Niger traverse 1 700 km du territoire. Il irrigue les champs, nourrit les familles, et constitue la voie commerciale historique qui a permis l'émergence de grands empires.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Histoire</div>
+        <h2 class="section-title">Chronologie<br><em>d'un Empire</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal" style="--delay: 0s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">IIIe siècle</span>
+            <h4>Empire du Ghana</h4>
+            <p>Premier grand empire ouest-africain, maître du commerce de l'or et du sel.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" style="--delay: 0.2s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1235</span>
+            <h4>Empire du Mali</h4>
+            <p>Soundiata Keïta fonde l'Empire Mandé. Tombouctou devient la capitale intellectuelle du monde africain.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" style="--delay: 0.4s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1324</span>
+            <h4>Mansa Moussa</h4>
+            <p>Le pèlerinage légendaire — un convoi de 60 000 hommes et 12 tonnes d'or bouleverse l'économie mondiale.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" style="--delay: 0.6s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1591</span>
+            <h4>Empire Songhaï</h4>
+            <p>À son apogée, le Songhaï est l'un des plus grands empires du monde, avec Tombouctou et Djenné.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" style="--delay: 0.8s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1960</span>
+            <h4>Indépendance</h4>
+            <p>Le 22 septembre, le Mali proclame son indépendance de la France et débute son histoire moderne.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Galerie</div>
+        <h2 class="section-title">Regards sur<br><em>le Mali</em></h2>
+      </div>
+    </div>
+    <div class="gallery-grid">
+         <div class="gallery-item gallery-large reveal" style="--delay: 0s">
+        <img src="images/asso.jpg" alt="Mali paysage" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Mali.svg/640px-Flag_of_Mali.svg.png'" />
+        <div class="gallery-caption">Excellence General Assimi Goita president de la republique du Mali</div>
+      </div>
+      <div class="gallery-item gallery-large reveal" style="--delay: 0s">
+        <img src="images/mali.jpg" alt="Mali paysage" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Mali.svg/640px-Flag_of_Mali.svg.png'" />
+        <div class="gallery-caption">Paysages du Mali</div>
+      </div>
+      <div class="gallery-item reveal" style="--delay: 0.1s">
+        <img src="images/m1.jpg" alt="Djenné" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Great_Mosque_of_Djenn%C3%A9.jpg/640px-Great_Mosque_of_Djenn%C3%A9.jpg'" />
+        <div class="gallery-caption">Mosquée de Djenné</div>
+      </div>
+      <div class="gallery-item reveal" style="--delay: 0.2s">
+        <img src="images/tb1.jpg" alt="Tombouctou" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Djingareyber.jpg/640px-Djingareyber.jpg'" />
+        <div class="gallery-caption">Tombouctou</div>
+      </div>
+      <div class="gallery-item gallery-wide reveal" style="--delay: 0.3s">
+        <img src="images/do.jpg" alt="Pays Dogon" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Dogon_village.jpg/640px-Dogon_village.jpg'" />
+        <div class="gallery-caption">Falaises de Bandiagara</div>
+      </div>
+      <div class="gallery-item reveal" style="--delay: 0.4s">
+        <img src="images/carte.jpg" alt="Mali" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Mali.svg/640px-Flag_of_Mali.svg.png'" />
+        <div class="gallery-caption">Carte du Mali</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="section-eyebrow">Contact</div>
+          <h2 class="section-title">Entrons en<br><em>Contact</em></h2>
+          <p>Vous souhaitez en savoir plus sur le Mali, planifier un voyage ou simplement échanger sur cette belle nation ?</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Bamako, Mali</strong>
+                <span>Capitale du Mali</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🌐</span>
+              <div>
+                <strong>Langue officielle</strong>
+                <span>Français (+ Bambara)</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong>Fuseau horaire</strong>
+                <span>GMT+0 (UTC)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject">
+                <option value="">Choisir un sujet</option>
+                <option>Tourisme &amp; Voyage</option>
+                <option>Culture &amp; Patrimoine</option>
+                <option>Histoire</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Envoyer le message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">Mali</span>
+        <span class="logo-sub">Terre de Lumière</span>
+      </div>
+      <p class="footer-text">© 2025 · Projet Cloud Computing — Déploiement S3 AWS</p>
+      <div class="footer-flag">
+        <span class="flag-green"></span>
+        <span class="flag-yellow"></span>
+        <span class="flag-red"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
